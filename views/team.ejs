@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/ourTeams.css">
+        <title>Team Member Detail</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Team Member Detail</h1>
+        </header>
+
+        <section class="team-member">
+            <!-- <img src="team-member1.jpg" alt="Team Member 1"> -->
+            <h2><%-team[0].name %></h2>
+            <p><%- team[0].age%></p>
+            <p><%- team[0].designation%></p>
+            <p><%- team[0].employeeid%></p>
+            <a href="/update/<%- team[0].id%>">Update Information</a>
+            <a href="/delete/<%- team[0].id%>">Delete Information</a>
+            <a href="/ourTeams">Back to Team</a>
+
+
+            <!-- Add more details here as needed -->
+        </section>
+
+       
+        
+    </body>
+
+</html>

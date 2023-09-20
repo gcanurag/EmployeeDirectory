@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Page</title>
+        <link rel="stylesheet" href="/addemployee.css">
+
+    </head>
+
+    <body>
+
+
+        <div class="container">
+            <h2>Submit Your Information</h2>
+            <form action="/updaterecord/<%- team[0].id %>" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" value="<%- team[0].name %>" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="text" value="<%- team[0].age %>" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="employeepost">Designation:</label>
+                    <input type="text" value="<%- team[0].designation %>" id="employeepost" name="employeepost" required>
+                </div>
+                <div class="form-group">
+                    <label for="EmployeeID">EmployeeID:</label>
+                    <textarea type="text" name="EmployeeID"  id="EmployeeID" rows="4" required><%- team[0].employeeid%></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+
+</html>
